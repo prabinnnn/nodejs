@@ -2,10 +2,13 @@
 // write a function
 //export that func out of file
 //require that file in server file
-const gethello = () => {
+const getHello = () => {
   console.log("hello from libaray");
 };
-const getnamaste = (name) => {
-  console.log("namaste $(name)");
+const getNamaste = (name) => {
+  console.log("namaste ${name}");
 };
-module.exports = { gethello, getnamaste };
+const getHel = () => {
+  console.log("hellll");
+};
+module.exports = { getHello, getNamaste, getHel };
