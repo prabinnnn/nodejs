@@ -1,8 +1,8 @@
 const http = require("http");
 http
-  .createServer((res, req) => {
-    res.writehead(200, { "content-type": "htm-text" });
-    res.write("i hate u");
+  .createServer((req, res) => {
+    res.writeHead(200, { "Content-Type": "text/html" });
+    res.end("i hate u");
   })
-  .listen(4000);
+  .listen(8000);
 console.log("server is running");
