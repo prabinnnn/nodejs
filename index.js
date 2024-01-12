@@ -1,10 +1,9 @@
-const greeting = require("./libaray/in");
+const upperCase = require("to-upper");
 const http = require("http");
 http
   .createServer((req, res) => {
-    greeting.getHello("ksdnjew");
-    greeting.getNamaste("prabin");
-    res.writeHead(200, { "Content-Type": "text/html" });
+    const result = upperCase("hello prabin");
+    upperCase.res.writeHead(200, { "Content-Type": "text/html" });
     res.end("hello world");
   })
   .listen(5000);
