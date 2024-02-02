@@ -7,5 +7,5 @@ http
     res.read("hello world");
     res.write("ur is hero");
   })
-  .listen(3000);
+  .listen(3000, "localhost");
 console.log("server is running");
